@@ -4,6 +4,7 @@ str1 = input("Введите строку 1: ")
 str2 = input("Введите строку 2: ")
 
 if sorted(str1.replace(" ", "").lower()) == sorted(str2.replace(" ", "").lower()):
-    print("Явл")
+    print("Слова являются анаграммами")
 else:
-    print("Нет")
+    print("Слова не являются анаграммами")
+
