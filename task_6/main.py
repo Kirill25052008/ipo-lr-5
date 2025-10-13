@@ -1,4 +1,4 @@
-#Темник Кирилл
+#Кирилл
 
 f = open(r"text.txt", "r", encoding = 'UTF-8')
 text = f.read()
@@ -11,3 +11,4 @@ q = open(r"output.txt", "w", encoding = 'UTF-8')
 
 for i in count_of_new_words:
     q.write(i + ", ")
+
