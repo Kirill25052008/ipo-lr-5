@@ -1,4 +1,4 @@
-#Темник Кирилл
+#Кирилл
 
 str = input("Введите строку ")
 print("Длина строки = ", len(str))
@@ -17,3 +17,4 @@ for i in str:
 
 print("Количество гласных = ", count_of_vowels)
 print("Количество согласных = ", count_of_consonants)
+
