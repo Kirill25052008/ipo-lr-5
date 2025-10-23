@@ -1,20 +1,21 @@
 #Кирилл
 
-str = input("Введите строку ")
-print("Длина строки = ", len(str))
+str = input("Введите строку ")# Просим ввести строку с клавиатуры
+print("Длина строки = ", len(str))# Выводим длину строки
 
-count_of_vowels = 0
-count_of_consonants = 0
+count_of_vowels = 0# Создаём переменную count_of_vowels (количество гласных) и присвайваем ей значение 0
+count_of_consonants = 0# Создаём переменную count_of_consonants (количество согласных) и присвайваем ей значение 0
 
-vowels = "аоэеиыуёюяАОЭЕИЫУЁЮЯ"
-consonants = "бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ"
+vowels = "аоэеиыуёюяАОЭЕИЫУЁЮЯ"# Создаём переменную vowels (гласные) и присвайваем ей все гласные
+consonants = "бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ"# Создаём переменную consonants (согласные) и присвайваем ей все согласные
 
-for i in str:
-    if i in vowels:
-        count_of_vowels = count_of_vowels + 1
-    if i in consonants:
-        count_of_consonants = count_of_consonants + 1
+for i in str:# Создаём цикл (пока переменная i находится в строке)
+    if i in vowels:# Проверяем находится ли переменная i в переменной vowels (гласные)
+        count_of_vowels += 1# Если да, то к значению переменной count_of_vowels (количество гласных) добавляем 1
+    if i in consonants:# Проверяем находится ли переменная i в переменной consonants (согласные)
+        count_of_consonants += 1# Если да, то к значению переменной count_of_consonants (количество согласных) добавляем 1
 
-print("Количество гласных = ", count_of_vowels)
-print("Количество согласных = ", count_of_consonants)
+print("Количество гласных = ", count_of_vowels)# Выводим количество гласных
+print("Количество согласных = ", count_of_consonants)# Выводим количество согласных
+
 
