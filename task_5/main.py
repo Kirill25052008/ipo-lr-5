@@ -1,13 +1,15 @@
-#Кирилл
+# Кирилл
+# Вариант 3
 
-str = input("Введите строку: ")
+str = input("Введите строку: ")# Просим ввести строку с клавиатуры
 
-count_of_vowels = 0
-vowels = "аоэеиыуёюяАОЭЕИЫУЁЮЯaeiouAEIOU"
+count_of_vowels = 0# Присвайваем переменной count_of_vowels (количество гласных) значение 0
+vowels = "аоэеиыуёюяАОЭЕИЫУЁЮЯaeiouAEIOU"# Присвайваем переменной vowels (гласные) все гласные
 
-for i in str:
-    if i in vowels:
-        count_of_vowels = count_of_vowels + 1
+for i in str:# Создаём цикл (пока переменная i находится в строке)
+    if i in vowels:# Если переменная i находится в переменной vowels (гласные), то
+        count_of_vowels += 1# В переменную count_of_vowels (количество гласных) добавляем 1
         
-print("Количество гласных = ", count_of_vowels)
+print("Количество гласных = ", count_of_vowels)# Выводим количество гласных
+
 
